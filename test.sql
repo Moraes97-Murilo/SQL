@@ -24,4 +24,4 @@ ALTER TABLE "TB_PLAYER" MODIFY ("BIRTH_DATE" NOT NULL ENABLE);
 
 SELECT * FROM TB_PLAYER;
 							       
-*.sql linguist-detectable=true
+*.sql linguist-detectable=true IN .gitattributes
