@@ -1,0 +1,15 @@
+SELECT d.DISTRICT_NAME, COUNT(i.DISTRICT_ID)
+
+FROM DISTRICTS d
+
+JOIN INCIDENTS i ON(d.DISTRICT_ID=i.DISTRICT_ID)
+
+GROUP BY d.DISTRICT_NAME;
+
+-------------------------------------------------------------------------------------------
+
+SELECT CITY_NAME, RIDES_PDAY
+
+FROM CITIES
+
+WHERE RIDES_PDAY > (SELECT AVG(RIDES_PDAY) FROM CITIES);
