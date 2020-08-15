@@ -23,5 +23,8 @@ ALTER TABLE "TB_PLAYER" MODIFY ("SEX" NOT NULL ENABLE);
 ALTER TABLE "TB_PLAYER" MODIFY ("BIRTH_DATE" NOT NULL ENABLE);                                                                                        
 
 
+SELECT NAME FROM TB_PLAYER
+WHERE NAME LIKE 'M%' AND SEX='F';
+
 SELECT * FROM TB_PLAYER
-WHERE NAME LIKE 'M%' AND SEX='F';							       
+WHERE SEX='M';
